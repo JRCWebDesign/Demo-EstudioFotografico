@@ -45,3 +45,7 @@ final result: passed
 ## Corrección posterior: fotógrafo, no camarógrafo
 
 La portada ahora usa assets/fotografo.jpg: fotógrafo con cámara de fotos de mano, sin equipo de cine. Se corrigieron título, marca y texto alternativo a fotografía y video. Portada inspeccionada en navegador a 1440 × 1000; carga verificada y sin desborde a 390 × 844. Capturas actualizadas. El resto de los componentes y sus interacciones no cambió.
+
+## Corrección del pie en Android
+
+El usuario aportó una captura con desborde de LUZ ESTUDIO por la fuente alternativa más ancha. En <=620px el nombre ahora se dispone en dos líneas con tamaño de 16vw. Probado en navegador a 320 y 390px, incluyendo Arial como sustituto temporal solo durante QA; el texto queda dentro del ancho sin ocultarlo. La regla temporal se retiró. Evidencia final: footer-mobile.png. Se conservó el diseño de escritorio.
