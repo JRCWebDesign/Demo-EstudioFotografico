@@ -27,7 +27,7 @@ function renderGallery(category = 'Todos') {
     image.loading = 'lazy';
     const caption = document.createElement('span');
     caption.className = 'gallery-caption';
-    caption.textContent = `${photo.title} ↗`;
+    caption.textContent = `${photo.category} / ${photo.title}`;
     button.append(image, caption);
     button.addEventListener('click', () => {
       lightbox.querySelector('img').src = image.src;
@@ -95,3 +95,21 @@ document.querySelector('#copy-message').addEventListener('click', async () => {
   }
 });
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+// Índice de servicios: una sola producción abierta, con imagen y descripción
+// sincronizadas. Los botones nativos conservan interacción por teclado y lector.
+document.querySelectorAll('.service-trigger').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    document.querySelectorAll('.service-trigger').forEach(button => {
+      const active = button === trigger;
+      button.setAttribute('aria-expanded', String(active));
+      button.closest('.service-entry').classList.toggle('active', active);
+      document.getElementById(button.getAttribute('aria-controls')).hidden = !active;
+      button.querySelector('.indicator').textContent = active ? '−' : '+';
+    });
+    const image = document.querySelector('#service-image');
+    image.src = `assets/${trigger.dataset.preview}.jpg`;
+    image.alt = trigger.dataset.alt;
+    document.querySelector('#service-caption').textContent = trigger.dataset.caption;
+  });
+});

@@ -2,6 +2,8 @@
 
 Demo original de un negocio de fotografía y video: eventos, infantiles, drones e inmobiliaria. Marca y textos ilustrativos; no representa a AeroVista ni utiliza sus datos de contacto.
 
+La segunda dirección visual toma la referencia cinematográfica del usuario: negro y verde petróleo, fotografía dominante, tipografía de afiche y archivo editorial asimétrico. El índice de servicios cambia su fotografía y descripción al seleccionarlo. Cada consulta precarga el servicio correspondiente. La foto de portada se generó para el encuadre y no representa a una persona del estudio.
+
 ## Ver la demo
 
 Requisito: Node.js 20 o posterior. No hay dependencias para instalar.

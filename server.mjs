@@ -4,14 +4,14 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = path.dirname(fileURLToPath(import.meta.url));
-const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.jpg': 'image/jpeg' };
+const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.jpg': 'image/jpeg', '.png': 'image/png' };
 const allowed = new Set(['/index.html', '/styles.css', '/script.js']);
 http.createServer(async (req, res) => {
   try {
     const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
     const target = pathname === '/' ? '/index.html' : pathname;
     // Lista explícita: nunca exponer adjuntos privados, Git ni configuración local.
-    if (!allowed.has(target) && !/^\/assets\/[a-z-]+\.jpg$/.test(target)) {
+    if (!allowed.has(target) && !/^\/assets\/[a-z-]+\.(jpg|png)$/.test(target)) {
       res.writeHead(404); res.end('No encontrado'); return;
     }
     const content = await readFile(path.join(root, target));
