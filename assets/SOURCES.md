@@ -14,10 +14,14 @@ Consultá la licencia de Unsplash y reemplazá el material por fotografías prop
 
 ## Prompt de la imagen generada
 
-### Portada cinematográfica (cineasta.jpg)
+### Primera portada, reemplazada (cineasta.jpg)
 
 Generada con ImageGen integrado. Fotografía cinematográfica panorámica de un realizador adulto operando una cámara de cine. Sujeto dominante a la izquierda; fondo verde petróleo oscuro y espacio negativo a la derecha. Luz lateral, piel natural, color desaturado y grano sutil. Sin textos, marcas ni interfaz. Exportada a JPEG para servirla localmente. El archivo fuente PNG queda disponible en assets/cineasta.png.
 
 ### Vista aérea (drones.jpg)
 
 Generate one photorealistic professional drone photograph for a photography business portfolio. Wide landscape composition, high oblique aerial view looking down at an elegant contemporary house with swimming pool and surrounding coastal greenery in Uruguay at golden hour, blue Atlantic coastline visible. True aerial drone perspective, realistic architectural geometry, beautiful warm sunlight, photographic natural textures, no text, no watermark, no UI. This is illustrative demo portfolio material.
+
+### Portada corregida: fotógrafo (fotografo.jpg)
+
+Imagen generada con ImageGen integrado: retrato editorial panorámico de un fotógrafo adulto a la izquierda, mirando por el visor de una cámara de fotos mirrorless de mano con objetivo fotográfico normal. Luz lateral, fondo verde petróleo oscuro y espacio negativo a la derecha. Sin cámara de cine, rig, monitor, rieles ni trípode. Sin textos, marcas ni interfaz. Exportada a JPEG para la web. Imagen ilustrativa, no representa a una persona real del estudio.

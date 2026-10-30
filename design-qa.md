@@ -41,3 +41,7 @@ final result: passed
 - P3: reemplazar las imágenes ilustrativas por trabajos del negocio real cuando haya una marca definida.
 - WhatsApp permanece sin número hasta disponer de un contacto autorizado.
 - Se mantiene el mecanismo de copia de mensaje verificado en la versión anterior; no se sobrescribe el portapapeles del usuario durante esta revisión.
+
+## Corrección posterior: fotógrafo, no camarógrafo
+
+La portada ahora usa assets/fotografo.jpg: fotógrafo con cámara de fotos de mano, sin equipo de cine. Se corrigieron título, marca y texto alternativo a fotografía y video. Portada inspeccionada en navegador a 1440 × 1000; carga verificada y sin desborde a 390 × 844. Capturas actualizadas. El resto de los componentes y sus interacciones no cambió.
